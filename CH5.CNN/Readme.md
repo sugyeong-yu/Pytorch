@@ -3,9 +3,8 @@
 ## 3. ResNet으로 컬러데이터셋에 적용하기
 ### 3.1 ResNet이란?
 - conv 출력에 전의 전 계층에 쓰인 입력을 더함으로써 특징이 유실되지 않도록 한다.
-- 아래그림은 ResNet의 구조이다.\
-![image](https://user-images.githubusercontent.com/70633080/104994361-a3baed00-5a67-11eb-81ba-81bead3078b0.png)\
-![image](https://user-images.githubusercontent.com/70633080/104994290-8a19a580-5a67-11eb-80d0-496fdd24b405.png)
+- 아래그림은 기존 네트워크와 resnet의 차이를 보여주는 기본 구조이다.
+![image](https://user-images.githubusercontent.com/70633080/104994361-a3baed00-5a67-11eb-81ba-81bead3078b0.png)
 ### 3.2 CIFAR-10 dataset
 - 32 * 32 크기의 이미지 6만개를 포함한다.
 - 자동차, 새, 고양이, 사슴 등 10가지의 클래스가 존재한다.
@@ -27,3 +26,5 @@
         - 즉, 학습 중 각 계층에 들어가는 입력을 평균과 분산으로 정규화함으로써 학습을 효율적으로 만들어준다.
         - Dropout과 같은 효과를 내는 장점이 있다.
 - 예제에서 쓰이는 resnet에서 채널은 증폭해주는 모듈은 따로 shortcut module을 갖게 된다. 이는 add연산으로 입력과 출력을 연결해주는 것.
+- 아래그림은 Resnet의 구조이다.\
+![image](https://user-images.githubusercontent.com/70633080/104994290-8a19a580-5a67-11eb-80d0-496fdd24b405.png)
