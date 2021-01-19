@@ -4,6 +4,7 @@
 ### 3.1 ResNet이란?
 - conv 출력에 전의 전 계층에 쓰인 입력을 더함으로써 특징이 유실되지 않도록 한다.
 - 아래그림은 기존 네트워크와 resnet의 차이를 보여주는 기본 구조이다.
+
 ![image](https://user-images.githubusercontent.com/70633080/104994361-a3baed00-5a67-11eb-81ba-81bead3078b0.png)
 ### 3.2 CIFAR-10 dataset
 - 32 * 32 크기의 이미지 6만개를 포함한다.
