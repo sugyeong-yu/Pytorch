@@ -14,5 +14,7 @@
 3. n:1 감정분석처럼 순차적 데이터를 보고 값하나를 나타낸다.
 4. n:n 챗봇, 기계번역과 같이 순차적 데이터를 보고 순차적 데이터를 출력한다.
 5. n:n 비디오분류와 같이 매 frame을 labeling한다.
-- [7.2 영화리뷰감정분석.ipynb](https://github.com/sugyeong-yu/Pytorch/blob/main/CH7.%20RNN/7.2%20%EC%98%81%ED%99%94%EB%A6%AC%EB%B7%B0%EA%B0%90%EC%A0%95%EB%B6%84%EC%84%9D.ipynb)
-- [7.3 seq2seq.ipynb](https://github.com/sugyeong-yu/Pytorch/blob/main/CH7.%20RNN/7.3%20seq2seq.ipynb)
+- [7.2 영화리뷰감정분석.ipynb](https://github.com/sugyeong-yu/Pytorch/blob/main/CH7.%20RNN/7.2%20%EC%98%81%ED%99%94%EB%A6%AC%EB%B7%B0%EA%B0%90%EC%A0%95%EB%B6%84%EC%84%9D.ipynb)\
+: RNN을 이용해 텍스트 감정분석을 해보는 예제
+- [7.3 seq2seq.ipynb](https://github.com/sugyeong-yu/Pytorch/blob/main/CH7.%20RNN/7.3%20seq2seq.ipynb)\
+: 한 언어로 된 문장을 다른단어로 번역하는 
