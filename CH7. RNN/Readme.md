@@ -1,1 +1,28 @@
 # RNN
+## 1. RNN이란
+데이터가 순서대로 나열된 순차적데이터 혹은 시계열데이터의 정보를 받아 전체내용을 학습하는 recurrent neural network이다.
+- RNN의 입력은 정해지지 않은 길이의 배열이다.
+- 출력은 순차적 데이터의 흐름을 모두 내포한다. 
+- RNN은 시계열데이터의 정보를 하나씩 입력받을 때 마다 지금까지 입력된 벡터들을 종합해 **은닉벡터**를 만든다.\
+![image](https://user-images.githubusercontent.com/70633080/105817193-9f0eaf80-5ff8-11eb-9f24-3f2989912041.png)
+- 마지막 은닉벡터는 배열 속 모든 벡터들의 내용을 압축한 벡터라고 할 수 있다.
+- RNN은 주로 텍스트와 자연어를 처리하고 학습하는데 사용된다.
+- RNN에는 많은 종류 그리고 유형이 있다.\
+![image](https://user-images.githubusercontent.com/70633080/105817405-e72dd200-5ff8-11eb-8fe5-cf72f33f4969.png)
+1. 1:1 CNN같은 일반적인 신경망과 동일하다.
+2. 1:n 이미지를 보고 이미지 안 상황을 설명한다.
+3. n:1 감정분석처럼 순차적 데이터를 보고 값하나를 나타낸다.
+4. n:n 챗봇, 기계번역과 같이 순차적 데이터를 보고 순차적 데이터를 출력한다.
+5. n:n 비디오분류와 같이 매 frame을 labeling한다.
+## [7.2 영화리뷰감정분석.ipynb](https://github.com/sugyeong-yu/Pytorch/blob/main/CH7.%20RNN/7.2%20%EC%98%81%ED%99%94%EB%A6%AC%EB%B7%B0%EA%B0%90%EC%A0%95%EB%B6%84%EC%84%9D.ipynb)
+: RNN을 이용해 텍스트 감정분석을 해보는 예제
+### 전처리과정
+1. 토크나이징과 워드임베딩
+- 토크나이징 : 언어의 최소단위인 토큰으로 나누는것 \
+![image](https://user-images.githubusercontent.com/70633080/105818736-9e771880-5ffa-11eb-9bc4-044ea775e855.png)
+- 워드임베딩 : 단어를 벡터로 변환하는것. 이를 위해서는 모든 단어(토큰)수 만큼의 벡터를 담는 사전을 정의해야한다.\
+![image](https://user-images.githubusercontent.com/70633080/105818950-da11e280-5ffa-11eb-9036-0ecb328cc421.png)
+- 단어사전 : 워드임베딩을 위해 만들어지는 단어사전\
+![image](https://user-images.githubusercontent.com/70633080/105818448-4c35f780-5ffa-11eb-95e1-f082efc683d5.png)
+## [7.3 seq2seq.ipynb](https://github.com/sugyeong-yu/Pytorch/blob/main/CH7.%20RNN/7.3%20seq2seq.ipynb)\
+: 한 언어로 된 문장을 다른단어로 번역하는 예제
