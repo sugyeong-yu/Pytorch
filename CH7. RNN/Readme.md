@@ -17,4 +17,4 @@
 - [7.2 영화리뷰감정분석.ipynb](https://github.com/sugyeong-yu/Pytorch/blob/main/CH7.%20RNN/7.2%20%EC%98%81%ED%99%94%EB%A6%AC%EB%B7%B0%EA%B0%90%EC%A0%95%EB%B6%84%EC%84%9D.ipynb)\
 : RNN을 이용해 텍스트 감정분석을 해보는 예제
 - [7.3 seq2seq.ipynb](https://github.com/sugyeong-yu/Pytorch/blob/main/CH7.%20RNN/7.3%20seq2seq.ipynb)\
-: 한 언어로 된 문장을 다른단어로 번역하는 
+: 한 언어로 된 문장을 다른단어로 번역하는 예제
