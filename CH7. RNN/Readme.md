@@ -14,7 +14,15 @@
 3. n:1 감정분석처럼 순차적 데이터를 보고 값하나를 나타낸다.
 4. n:n 챗봇, 기계번역과 같이 순차적 데이터를 보고 순차적 데이터를 출력한다.
 5. n:n 비디오분류와 같이 매 frame을 labeling한다.
-- [7.2 영화리뷰감정분석.ipynb](https://github.com/sugyeong-yu/Pytorch/blob/main/CH7.%20RNN/7.2%20%EC%98%81%ED%99%94%EB%A6%AC%EB%B7%B0%EA%B0%90%EC%A0%95%EB%B6%84%EC%84%9D.ipynb)\
+## [7.2 영화리뷰감정분석.ipynb](https://github.com/sugyeong-yu/Pytorch/blob/main/CH7.%20RNN/7.2%20%EC%98%81%ED%99%94%EB%A6%AC%EB%B7%B0%EA%B0%90%EC%A0%95%EB%B6%84%EC%84%9D.ipynb)\
 : RNN을 이용해 텍스트 감정분석을 해보는 예제
-- [7.3 seq2seq.ipynb](https://github.com/sugyeong-yu/Pytorch/blob/main/CH7.%20RNN/7.3%20seq2seq.ipynb)\
+- 전처리과정
+1. 토크나이징과 워드임베딩
+- 토크나이징 : 언어의 최소단위인 토큰으로 나누는것 \
+![image](https://user-images.githubusercontent.com/70633080/105818736-9e771880-5ffa-11eb-9bc4-044ea775e855.png)
+- 워드임베딩 : 단어를 벡터로 변환하는것. 이를 위해서는 모든 단어(토큰)수 만큼의 벡터를 담는 사전을 정의해야한다.\
+![image](https://user-images.githubusercontent.com/70633080/105818950-da11e280-5ffa-11eb-9036-0ecb328cc421.png)
+- 단어사전 : 워드임베딩을 위해 만들어지는 단어사전\
+![image](https://user-images.githubusercontent.com/70633080/105818448-4c35f780-5ffa-11eb-95e1-f082efc683d5.png)
+## [7.3 seq2seq.ipynb](https://github.com/sugyeong-yu/Pytorch/blob/main/CH7.%20RNN/7.3%20seq2seq.ipynb)\
 : 한 언어로 된 문장을 다른단어로 번역하는 예제
