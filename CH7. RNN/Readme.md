@@ -24,5 +24,16 @@
 ![image](https://user-images.githubusercontent.com/70633080/105818950-da11e280-5ffa-11eb-9036-0ecb328cc421.png)
 - 단어사전 : 워드임베딩을 위해 만들어지는 단어사전\
 ![image](https://user-images.githubusercontent.com/70633080/105818448-4c35f780-5ffa-11eb-95e1-f082efc683d5.png)
-## [7.3 seq2seq.ipynb](https://github.com/sugyeong-yu/Pytorch/blob/main/CH7.%20RNN/7.3%20seq2seq.ipynb)\
+## [7.3 seq2seq.ipynb](https://github.com/sugyeong-yu/Pytorch/blob/main/CH7.%20RNN/7.3%20seq2seq.ipynb)
 : 한 언어로 된 문장을 다른단어로 번역하는 예제
+- seq2seq : 각자 다른역할을 하는 두개의 RNN을 이어붙인 모델이다.
+- 인코더 - 원문을 이해하는 역할
+- 디코더 - 번역문을 작성하는 역할
+### 인코더
+원문속의 모든 단어를 입력받아 문장의 뜻을 내포하는 하나의 고정크기텐서를 만들어낸다.
+- 문맥벡터 : 압축된 텐서는 원문의 뜻과 내용을 압축하고 있다하여 문맥벡터라고한다.
+- 인코더 RNN은 원문 속의 토큰을 차례로 입력받는다.
+- 원문 마지막 토큰에 해당하는 은닉벡터는 원문의 뜻을 모두 내포하는 문맥벡터이다.
+### 디코더
+인코더에게서 원문 문맥벡터를 이어받아 번역문 속의 토큰을 차례대로 예상한다.
+- 디코더가 번역문의 단어나 토큰을 출력할 때 인코더로부터 정보를 전달받아야한다.
